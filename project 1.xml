@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    image map
+</head>
+
+<body>
+    <img src="https://vizzlo.com/site/uploads/what-is-venn-1.jpg" alt="ven diagram" usemap="#ven diagram">
+    <map name="ven diagram">
+        <area shape="poly"
+            coords="562,188,440,135,320,151,218,207,170,272,131,365,130,477,172,575,218,633,286,685,393,707,479,696,518,657,496,592,455,500,448,376,493,249,562,188" 
+            href="https://www.discovery.com/ "alt="animals">
+
+        <area shape="poly" coords="576,195,496,281,458,384,460,466,491,556,578,640,651,564,684,482,691,376,658,290,579,200"
+        href="https://earth.google.com/web/@0,-2.423,0a,22251752.77375655d,35y,0h,0t,0r" alt="earth">
+        <area shape="poly" coords="579,182,692,145,788,151,872,175,924,223,989,1009,425,979,543,916,629,833,681,737,701,645,684,584,661,644,596,695,492,705,390,682,312,646,247,579,182" 
+        href="https://www.bbcearth.com/" alt="ice place">
+
+</body>
+
+</html>
