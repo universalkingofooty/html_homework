@@ -3,88 +3,198 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-<h1 style="text-align: center;background-color: brown;">MY FIRST FORM </h1>
+    <title>my form</title>
+<h1><u>SCHOLARSHIP FORM </u></h1>
 </head>
-<body style="text-align: center;color: darkblue;">
-    <form action="html_homework\form submit.html"
+<style>
+   div {
+      text-align: center;
+    
+    }
+    fieldset{
+          text-align: center;
+
+    }
+    body{
+        background-image:url('https://image.freepik.com/free-vector/overlapping-forms-background_23-2148642422.jpg');
+        background-size:cover;
+        background-attachment: fixed;
+        font-family:cursive;
+        text-align: center;
+        background-repeat: repeat;
+    }
+    h1{
+        color:white;
+        text-shadow: 1px 1px 2px red, 0 0 25px red, 0 0 5px red;
+    }
+</style>
+
+
+
+<body>
+ <form action="html_homework\form submit.html"
     target="_blank" method="get" autocomplete="on">
-    <fieldset>
+    <fieldset style="width: 500px;">
         <legend>personal</legend>
-        <label for="fname">First name:</label>
-        <br>
+       <br>
+        <label for="fname">Full name:</label>   
         <input type="text" id="fname" name="fname" >
+       
         <br><br>
-        <label for="lname">Last name:</label>
-        <br>
-        <input type="text" id="lname" name="lname" >
-        <br><br>
-        <br><br>
-        <h2 style="text-align: center;">SELECT YOUR GROUP</h2>
-        <input type="radio" id="bio-maths" name="fav_sub" value="bio-maths">
-       <label for="html">bio-maths
-        </label><br>
-       <input type="radio" id="science" name="fav_sub" value="science">
-       <label for="css">science</label><br>
-       <input type="radio" id="arts" name="fav_sub" value="arts">
-       <label for="javascript">arts</label>   
-    </fieldset> <hr>  
-    </form> 
-     <form action="html_homework\form submit.html"
-     target="_blank" method="get" autocomplete="on">
         
-        <label for="email">your email:</label>
-        <input type="email" id="email" name="email"><br><br>
-        <label for="pwd">Password:</label>
-        <input type="password" id="pwd"  name="pwd">
+        <label for="pname">Parent name:</label>
+        <input type="text" id="pname" name="pname">
+       
         <br><br>
-     <label for="gender">male</label>
-         <input type="radio"id="male" name="gender">
-      <label for="gender">female</label>
-      <input type="radio" id="female" name="gender"><br><br>   
-      <label for="lang">english</label>
-      <input type="checkbox" id="lang" name="lang">
-       <label for="lang">tamil</label>
-       <input type="checkbox" id="lang" name="lang"> 
-       <br><br>
-    </form>
-    <hr>
-       <form action="html_homework\form submit.html"
-       target="_blank" method="get" autocomplete="on">
-       <label for="showroom city">choose ur city</label>
-       <input list="showroom city" name="showroom city">
-       <datalist id="showroom city">
-             <option value="coimbatore">
-             <option value="chennai">
-             <option value="ooty">
-             <option value="madhurai">
-             <option value="thoothukudi"> 
-             </datalist>               
-       <label for="bikes">select a bike</label>
-       <select id="bikes" name="bikes" size="0" >
-            <option value="pulsar">Pulsur</option>
-            <option value="yamaha">Yamaha</option>
-            <option value="royal enfield"selected>Royl Enfield</option>
-            <option value="ktm">KTM</option>
+       
+        <label for="gender">Gender:</label>
+
+        <label for="gender">Male</label>
+        <input type="radio"id="male" name="gender">
+        
+        <label for="gender">Female</label>
+        <input type="radio" id="female" name="gender">
+       
+        <br><br>
+        
+        <label for="collage name">school name/collage name: </label>
+        <input type="text" id="collage name" name="collage name">
+       
+        <br><br>
+       
+        <label for="cast">caste:</label>
+        <input type="text" id="cast" name="cast"><br><br>
+        
+        <label for="sub cast">sub caste:</label>
+        <input type="text" id="sub cast"  name="sub cast">
+       
+        <br><br>
+       
+        <label for="d.o.b">D.O.B:</label>
+        <input type="date" id="d.o.b" name="d.o.b">
+      
+        <br><br>
+  
+    </fieldset>      
+    
+    <br><br>
+   
+    <fieldset style="width: 500px;"> 
+        <legend>bank details</legend>   
+        <br>
+        <label for="bank name">Bank Name:</label>
+        <select id="bank name" name="bank name" size="0" >
+            <option value="indian">Indian bank</option>
+            <option value="Axis">Axis Bank</option>
+            <option value="sbi"selected>State Bank</option>
+            <option value="canara">Canara Bank</option>
         </select>
         
+         
+        <br><br>
+        
+        <label for="branch name">Branch Name:</label>
+        <input type="text" id="branch name" name="branch name"> 
+        
+        <br><br>
+    
+        <label for="ac.no ">Account Num:</label>
+        <input type="number"  min="10" id="adhar" name="ac.no" >
+        
+        <br><br>
+         
+        <label for="ifsc">IFSC Code:</label>
+        <input type="text" id="ifsc" name="ifsc">
+    </fieldset> 
+        
+    <br><br>
+      
+    <fieldset style="width: 500px;">
+         <legend>Other details</legend>
+       <br>
+        <label for="adhar">Adhar number:</label>
+        <input type="number" min="10" id="adhar" name="adhar" pattern="[1-4][1-4][1-4][1-4s]"> 
+
         <br><br>
 
-        <label for="favcolor">Select your favorite color:</label>
-        <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+        <label for="ph.no">Phone number:</label>
+        <input type="number">   
+        
         <br><br>
-        <label for="date">which date you want</label>
-        <input type="date" id="date" name="date">
+       
+        <label for="email">Student Email</label>
+        <input type="text" id="email" name="email">
+        
         <br><br>
-        <textarea name="reason" rows="20" cols="20"> why selecting this bike?</textarea>
-        <br> <br>
-        <button type="button" onclick="alert('have a nice day')">click</button> <br><br>
-        <label for="myfile">choose file</label>
-        <input type="file" id="myfile" name="myfile"><br><br>
+    
+        <label for="income">Annual Income</label>
+        <input type="number" min="10" id="income" name="income">
+        
+        <br><br>
+        
+        
+        <label for="photo">Student photo</label>
+        <input type="file" id="photo" name="photo">
 
-        <input type="image" src="https://magellancounseling.com/wp-content/uploads/2014/09/red-submit-button.png" alt="submit" width="100px" height="50px">
-        <input type="image" src="https://th.bing.com/th/id/OIP.ZAA8fHLdY2mM2uQ1R7gFigHaDK?pid=ImgDet&rs=1" width="120px" height="50px"> 
-         
+    </fieldset>       
+      <br><br> 
+    
+    <fieldset style="width: 500px;">  
+       
+        <legend>Address</legend>
+        <br>
+        <textarea name="address" style="width: 200px; height: 250px;" >temporary address:</textarea>
+        <textarea name="address" style="width: 200px; height: 250px;">permanent address:</textarea>
+      
+    </fieldset>
+    
+    <br><br>
+
+    <fieldset style="width: 500px;">
+        <legend>prooves in possation</legend>
+         <br>
+        <label for="bank book">Bank book</label>
+        <input type="checkbox" id="bank book" name="bank book">
+
+    
+        <label for="adhar">Adhar</label>
+        <input type="checkbox" id="Adhar" name="Adhar">
+
+        <br><br>
+
+        <label for="comunity">comunity</label>
+        <input type="checkbox" id="comunity" bame="comunity">
+
+        
+        <label for="income">Income</label>
+        <input type="checkbox" id="income" name="income">
+
+        <br><br>
+
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      </fieldset>
+
+      <br><br>
+      
+    <div>
+       <input type="image" src="https://magellancounseling.com/wp-content/uploads/2014/09/red-submit-button.png" alt="submit" width="100px" height="50px">
+       <input type="image" src="https://th.bing.com/th/id/OIP.ZAA8fHLdY2mM2uQ1R7gFigHaDK?pid=ImgDet&rs=1" width="120px" height="50px"> 
+    </div> 
          
     
          
@@ -98,9 +208,7 @@
     
     
     
-    </form>            
-
-
-         
-    </body>
+    
+</form>            
+</body>
 </html>
