@@ -1,0 +1,26 @@
+h1 {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 2px 2px black;
+    color: white;
+    font-size: 180px;
+    background-color:chocolate;
+    
+    
+}
+
+span {
+    font-size: 70px;
+    color: yellow !important;
+}
+
+span.as{
+    font-size: 30px;
+    color: white !important;
+    font-family: cursive; 
+
+
+}
+
+
+     
