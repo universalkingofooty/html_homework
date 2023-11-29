@@ -75,6 +75,13 @@
       border-radius: 5px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
+    #source:hover{
+      background-color: rgb(86, 88, 88);
+
+    }
+    source{
+           text-align: center;
+    }
   </style>
 
 </head>
@@ -92,7 +99,8 @@
   
     <input type="button" id="button" value="submit" onclick="calculateBMI()">
 
-    <div id="result"></div>
+    <div id="result"></div><br>
+    <a href="https://www.nhlbi.nih.gov/health/educational/lose_wt/BMI/bmicalc.htm" style="text-align: center ;" target="_blank" id="source">view source</a>
   </div>
   <script>
     function calculateBMI() {
