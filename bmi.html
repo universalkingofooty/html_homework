@@ -63,6 +63,18 @@
       margin-top: 20px;
       font-weight: bold; 
     }  
+     script {
+      display: none;
+      position: fixed;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 15px;
+      background-color: #f44336;
+      color: white;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
   </style>
 
 </head>
@@ -86,9 +98,9 @@
     function calculateBMI() {
         const weight = (document.getElementById('weight').value);
         const height = (document.getElementById('height').value);
-
-        if (isNaN(weight) || isNaN(height) || height <= 0) {
-            alert("Please enter valid weight and height values.");
+     
+        if (isNaN(weight) || isNaN(height) || height <= 0 || weight <=0) {
+            alert ("Please enter valid weight and height values.");
             return;
         }
 
@@ -99,7 +111,7 @@
             resultMessage = `Your BMI is ${userBMI}. You are underweight. 😒😒😢`;
         } else if (userBMI <= 25.0) {
             resultMessage = `Your BMI is ${userBMI}. You are in a healthy weight. 🥳👌`;
-        } else if (userBMI <= 35.0) {
+        } else if (userBMI <= 30.0) {
             resultMessage = `Your BMI is ${userBMI}. You are overweight. 😧😨`;
         } else {
             resultMessage = `Your BMI is ${userBMI}. You are in obesity range. 😱`;
