@@ -1,6 +1,6 @@
 //getting random number
-const random_number = Math.floor(Math.random() * 20);
-const secret_num = random_number
+let random_number = Math.floor(Math.random() * 20);
+let secret_num = random_number
 //assigning 2 variables
 let score = 20;
 let high_score = 0;
@@ -71,6 +71,8 @@ let btnClickFunction = () => {
         document.getElementById('check').textContent = "Start guessing..."
         document.querySelector('body').style.backgroundColor = '#222'
         document.getElementById('number').textContent = "?"
+        random_number = Math.floor(Math.random() * 20);
+        secret_num = random_number
 }
 
 
