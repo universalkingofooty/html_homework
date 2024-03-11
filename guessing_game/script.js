@@ -85,3 +85,17 @@ document.getElementById('againBtn').addEventListener('click', btnClickFunction)
 //         b.textContent = 20;
 // };
 // document.getElementById('btn again').addEventListener('click',clickFun(just,read,high_score));
+//model block
+document.querySelector('.overlay').classList.remove('hidden')
+
+let closeModel = document.querySelector('.close-modal')
+
+closeModel.addEventListener('click',function(){
+    document.querySelector('.modal').classList.add('hidden')
+    document.querySelector('.overlay').classList.add('hidden')
+})
+
+document.querySelector('.overlay').addEventListener('click',function(){
+    document.querySelector('.modal').classList.add('hidden')
+    document.querySelector('.overlay').classList.add('hidden')
+})
