@@ -126,7 +126,6 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 30%;
-
   background-color: white;
   padding: 6rem;
   border-radius: 5px;
@@ -143,4 +142,8 @@ h1 {
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(3px);
   z-index: 5;
+}
+.cheer{
+  background-color: yellow;
+  font-style: italic;
 }
